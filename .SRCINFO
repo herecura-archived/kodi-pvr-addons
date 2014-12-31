@@ -1,0 +1,22 @@
+pkgbase = kodi-pvr-addons
+	pkgdesc = PVR add-ons for current stable kodi
+	pkgver = 20141212
+	pkgrel = 1
+	url = https://github.com/opdenkamp/xbmc-pvr-addons
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = libmysqlclient
+	makedepends = boost
+	depends = kodi
+	optdepends = tvheadend-git: tvheadend backend
+	optdepends = mythtv: mythtv backend
+	conflicts = xbmc-pvr-addons
+	conflicts = xbmc-pvr-addons-git
+	replaces = xbmc-pvr-addons
+	source = kodi-pvr-addons-20141212.tar.gz::https://github.com/opdenkamp/xbmc-pvr-addons/archive/Helix_rc3.tar.gz
+	sha256sums = e48de53c58245e512095d515d463f013e51e165fc617f1cb93e443cdd9f5096b
+
+pkgname = kodi-pvr-addons
+
