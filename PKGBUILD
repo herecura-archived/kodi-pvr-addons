@@ -5,7 +5,7 @@
 pkgname=kodi-pvr-addons
 pkgver=20141212
 _relname='Helix_rc3'
-pkgrel=2
+pkgrel=3
 pkgdesc="PVR add-ons for current stable kodi"
 arch=('i686' 'x86_64')
 url="https://github.com/opdenkamp/xbmc-pvr-addons"
@@ -17,6 +17,7 @@ optdepends=('tvheadend-git: tvheadend backend' 'mythtv: mythtv backend')
 replaces=('xbmc-pvr-addons')
 conflicts=('xbmc-pvr-addons' 'xbmc-pvr-addons-git')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/opdenkamp/xbmc-pvr-addons/archive/${_relname}.tar.gz")
+sha256sums=('e48de53c58245e512095d515d463f013e51e165fc617f1cb93e443cdd9f5096b')
 
 build() {
   cd "$srcdir/xbmc-pvr-addons-${_relname}"
@@ -30,4 +31,3 @@ package() {
   make DESTDIR="$pkgdir/" install
 }
 
-sha256sums=('e48de53c58245e512095d515d463f013e51e165fc617f1cb93e443cdd9f5096b')
